@@ -1,0 +1,116 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="153dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="65dp"
+        android:contentDescription="@string/descrImagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barrel" />
+
+
+    <TextView
+        android:id="@+id/etNombre"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="123dp"
+        android:text="@string/titulo"
+        android:textColor="@color/blanco"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+
+        android:layout_below="@id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="106dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="@string/etUsuario"
+        android:inputType="textPersonName"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+
+        android:layout_below="@id/etUsuario"
+        android:layout_alignStart="@id/etUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="106dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="@string/etPass"
+        android:inputType="textPassword"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="106dp"
+        android:text="@string/ingresar"
+        android:background="@color/rosa"
+        android:radius= "30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPass" />
+
+    <TextView
+        android:id="@+id/etRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/registrar"
+        android:textColor="@color/blanco"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Crontrolador</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="titulo">Barrel Service</string>
+    <string name="etUsuario">Usuario</string>
+    <string name="etPass">Contraseña</string>
+    <string name="registrar">Si no tiene cuenta. Registrar aquí</string>
+    <string name="descrImagen">Imagen de Titulo</string>
+
+</resources>
